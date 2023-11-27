@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  /* background-color: var(--Violet); */
+  background-color: var(--Violet);
+  background-image: url(images/bg-desktop.svg);
+  /* min-height: 100vh; */
+}
+
+.container {
+  margin: 60px;
+  /* min-height: 100vh; */
+}
+
+.content {
+  display: flex;
+  /* align-items: center; */
+  margin-top: 31px;
+}
+
+.text-content {
+  padding: 83px;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #fff;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  color: #fff;
+}
+.text-content button {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 50px;
+  margin-top: 25px;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: hsla(257, 40%, 49%, 0.9);
+}
+button:hover {
+  background-color: var(--Soft-Magenta);
+  font-weight: 400;
+  color: #fff;
+}
+
+.logo:hover {
+  color: var(--Soft-Magenta);
+  border: 2px solid var(--Soft-Magenta);
+}
+
+.logos {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.logo {
+  /* width: 22px; */
+  /* height: 22px; */
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 5px; /* Adjust padding as needed */
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    background-image: url("images/bg-mobile.svg");
+    background-size: cover;
+  }
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    gap: 1rem;
+  }
+  .main-svg img {
+    width: 400px;
+  }
+  h1 {
+    /* font-family: "Poppins", sans-serif; */
+    font-weight: 600;
+    font-size: 2rem;
+    color: #fff;
+  }
+  .text-content {
+    padding: inherit;
+  }
+}
